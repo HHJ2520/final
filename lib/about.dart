@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 class about extends StatefulWidget {
-  const about({super.key});
   @override
   State<about> createState() => _Firstpage();
 }

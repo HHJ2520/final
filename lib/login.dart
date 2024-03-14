@@ -14,8 +14,8 @@ TextEditingController email =TextEditingController();
 TextEditingController password =TextEditingController();
 
 void login(emai,passwo){
-  if(emai=="mark" && passwo =="1234" ){Navigator.pushNamed(context, '/first');
-
+  if(emai=="mark" && passwo =="1234" ){
+    Navigator.pushNamed(context, '/first');
   }
 }
   @override

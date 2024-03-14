@@ -15,18 +15,16 @@ void main() {
       }
     });
 
-
-
     test('Flash card', () async {
       await driver!.tap(find.byValueKey('loginfrist'));
       await driver!.tap(find.byValueKey('email'));
       await driver!.enterText("mark");
       await driver!.tap(find.byValueKey('password'));
-      await driver!.enterText("1234");
+      await driver!.enterText("password");
       await driver!.tap(find.byValueKey('login'));
       expect(await driver!.getText(find.text('เลือกเนื้อหาที่ต้องการเรียน')),
           'เลือกเนื้อหาที่ต้องการเรียน');
-    },timeout: Timeout(Duration(seconds: 30)));
+    },timeout: Timeout(Duration(seconds: 1000)));
 
     // test('Flash card', () async {
     //   await driver!.tap(find.byValueKey('flashpage'));

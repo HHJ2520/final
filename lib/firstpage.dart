@@ -97,7 +97,7 @@ class _Firstpage extends State<Firstpage> {
             SizedBox(
                   width: 120,
                   child: FloatingActionButton.extended(
-                    key: ValueKey('loginfrist'),
+                    key: ValueKey('about'),
                     onPressed: () {
                       Navigator.pushNamed(context, '/about',
                           arguments: num2);
